@@ -1,3 +1,9 @@
 #Problem Statement
-Studentsv often struggle to track daily expenses, which leads to poor budgeting and unplanned spending. Small expenses add up over time, but students lack simple tools to monitor and analyze their spending habits./
-This project aims to provide a simple student friendly expense tracking system with category-wise summaries and AI-assisted insights.
+Students frequently have trouble keeping track of their daily spending, which results in overspending and inadequate financial planning. Current solutions lack student-centric features or are overly complicated.
+
+The goal of this project is to create an easy-to-use, intelligent, and straightforward expense tracking system that enables students to:
+
+-Keep track of your daily spending.
+-Sort expenditures into categories
+-See financial trends.
+-Real-time account balance monitoring
