@@ -1,18 +1,10 @@
-##Architecture Components
-1. User
-   -Interacts with the system through UI
-2.Frontend
-   -Handles the expense input
-   -displays dashboards and summaries
-3.Backend
-   -processes buisness logic
-   -manages expense and data categories
-4.Database
-   -stores expense records and categories
-5.AI layer
-   -assists with expense categorization
-   -generates spending insights and suggestions
+## Architecture Components
 
-##Data Flow 
-User->Frontend->Backend->Database->AI Layer->Frontend
-
+The student expense tracker follows a frontend-centric architecture.
+## Components
+1. User Interface(HTML/CSS)
+2. Application Logic(Javascript)
+3. Data Storage(Browser Local Storage)
+4. Insights and Summary Logic
+## Flow
+User -> UI -> Javascript Logic -> LocalStorage -> UI Updates
