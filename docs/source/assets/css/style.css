@@ -1,0 +1,188 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   VARIABLES
+========================= */
+:root {
+  --pink-dark: rgba(184, 142, 134, 0.9);
+  --pink-mid: rgba(201, 175, 171, 0.9);
+  --pink-light: rgba(212, 201, 199, 0.9);
+  --beige-light: rgba(194, 185, 182, 0.9);
+  --text-dark: #4a3f3c;
+  --white: #ffffff;
+}
+
+/* =========================
+   BASE STYLES
+========================= */
+body {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background: var(--pink-light);
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+h1, h2, h3 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.subhead {
+  font-style: italic;
+  opacity: 0.75;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.button {
+  padding: 12px 28px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.button-primary {
+  background: var(--pink-dark);
+  color: var(--white);
+}
+
+.button-primary:hover {
+  background: var(--pink-mid);
+}
+
+.button-outline {
+  background: transparent;
+  border: 2px solid var(--pink-dark);
+  color: var(--pink-dark);
+}
+
+.button-outline:hover {
+  background: var(--pink-dark);
+  color: var(--white);
+}
+
+/* =========================
+   HERO / WELCOME
+========================= */
+.hero {
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    var(--pink-dark),
+    var(--pink-light)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* =========================
+   SECTIONS (DIAGONAL LOOK)
+========================= */
+.section {
+  padding: 100px 20px;
+  background: var(--pink-mid);
+  position: relative;
+}
+
+.section.alt {
+  background: var(--beige-light);
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: inherit;
+  transform: skewY(-3deg);
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+/* =========================
+   ICON CIRCLE
+========================= */
+.icon {
+  width: 80px;
+  height: 80px;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+/* =========================
+   CARDS / BOXES
+========================= */
+.card {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* =========================
+   FORMS
+========================= */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--pink-mid);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  .section {
+    padding: 80px 20px;
+  }
+}

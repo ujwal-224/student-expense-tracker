@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calendar</title>
+
+  <link rel="stylesheet" href="calendar.css">
+</head>
+
+<body>
+
+<header>
+  <h2>Daily Expense Tracker</h2>
+
+  <a href="dashboard.html">⬅ Back</a>
+</header>
+
+
+<div class="container">
+
+  <div class="box">
+
+    <h3>Monthly Budget</h3>
+
+    <form id="monthForm">
+
+      <input
+        type="number"
+        id="monthBudget"
+        placeholder="Enter Budget"
+        required
+      >
+
+      <button>Save</button>
+    </form>
+
+    <p>
+      Budget: ₹ <span id="showBudget">0</span>
+    </p>
+
+  </div>
+
+
+  <div class="box">
+
+    <h3>Select Date</h3>
+
+    <input type="date" id="datePick">
+  </div>
+
+
+  <div class="box">
+
+    <h3>Add Expense</h3>
+
+    <form id="expenseForm">
+
+      <input type="number" id="amount" placeholder="Amount" required>
+
+      <select id="category">
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Education</option>
+        <option>Shopping</option>
+        <option>Other</option>
+      </select>
+
+      <button>Add</button>
+    </form>
+
+  </div>
+
+
+  <div class="box table">
+
+    <h3>Daily Expenses</h3>
+
+    <table>
+
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+
+      <tbody id="list"></tbody>
+
+    </table>
+
+  </div>
+
+</div>
+
+
+<script src="calendar.js"></script>
+
+</body>
+</html>
